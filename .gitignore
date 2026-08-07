@@ -1,0 +1,22 @@
+# 1. Ignore everything by default in the root directory
+/*
+
+# 2. Whitelist (allow) the specific files and folders you want to keep
+!/public/
+!/src/
+!/package.json
+!/README.md
+!/.gitignore
+
+# 3. Standard Git ignores (built-in protection for hidden files/dependencies inside whitelist folders)
+node_modules/
+.DS_Store
+*.log
+.env
+.env.local
+.env.*.local
+dist/
+build/
+.vscode/
+.idea/
+.codesandbox/
