@@ -1,3 +1,4 @@
+import React from "react";
 export default function TabItem(params) {
   return params.value ? (
     <div id="tab-content">

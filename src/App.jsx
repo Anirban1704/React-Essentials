@@ -1,9 +1,10 @@
+import React from "react";
 import { useState } from "react";
 
 import Header from "./components/Header.jsx";
 import CoreConcept from "./components/CoreConcept.jsx";
 import TabItem from "./components/TabItem.jsx";
-import { CORE_CONCEPTS, EXAMPLES } from "./data.js";
+import { CORE_CONCEPTS, EXAMPLES } from "./data.jsx";
 import TabButton from "./components/TabButton.jsx";
 
 const reactDescriptions = ["Fundamental", "Crucial", "Core"];

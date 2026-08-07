@@ -1,3 +1,4 @@
+import React from "react";
 import header_img from "../../src/assets/react-core-concepts.png";
 
 export default function Header() {
