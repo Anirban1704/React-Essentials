@@ -1,20 +1,12 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 
 import Header from "./components/Header.jsx";
-import CoreConcept from "./components/CoreConcept.jsx";
-import TabItem from "./components/TabItem.jsx";
-import { CORE_CONCEPTS, EXAMPLES } from "./data.jsx";
-import TabButton from "./components/TabButton.jsx";
-
-const reactDescriptions = ["Fundamental", "Crucial", "Core"];
-
-function genRandomInt(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
+import CoreConcepts from "./components/CoreConcepts.jsx";
+import Examples from "./components/Examples.jsx";
 
 function App() {
-  const [selectedTopic, setSelectedTopic] = useState("");
+  // const [selectedTopic, setSelectedTopic] = useState("");
 
   //function handleClick(tabName) {
   //setTabContent(EXAMPLES[tabName]);
@@ -38,15 +30,18 @@ function App() {
     <div>
       <Header />
       <main>
-        <section id="core-concepts">
+        {
+          /* <section id="core-concepts">
           <h2>Core concepts</h2>
           <ul>
             {CORE_CONCEPTS.map((item, index) => (
               <CoreConcept key={index} {...item} />
             ))}
           </ul>
-        </section>
-        <section id="examples">
+        </section> */ <CoreConcepts />
+        }
+        {
+          /* <section id="examples">
           <h2>Examples</h2>
           <menu>
             <TabButton
@@ -74,7 +69,7 @@ function App() {
               State
             </TabButton>
           </menu>
-          {/* {
+           {
              {tabContent ? (
             <div id="tab-content">
               <h3>{tabContent.title}</h3>
@@ -86,9 +81,10 @@ function App() {
           ) : (
             <p>Please Select a topic</p>
           )} 
-          } */}
+          } 
           <TabItem value={EXAMPLES[selectedTopic]} />
-        </section>
+        </section> */ <Examples />
+        }
       </main>
     </div>
   );
